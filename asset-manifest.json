@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.2a6a63ad.css",
-    "main.js": "/Portfolio/static/js/main.b25a4a32.js",
+    "main.js": "/Portfolio/static/js/main.ebc23ea5.js",
     "static/js/415.4d6acbeb.chunk.js": "/Portfolio/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/movie.png": "/Portfolio/static/media/movie.a86c0a167dba933f7fed.png",
@@ -11,6 +11,7 @@
     "static/media/VU6fU2.png": "/Portfolio/static/media/VU6fU2.76e506a74b14e315626b.png",
     "static/media/lemon.png": "/Portfolio/static/media/lemon.2d5efb135cfc1a6418d9.png",
     "static/media/luchador.png": "/Portfolio/static/media/luchador.ec500abcc63f152e8bea.png",
+    "static/media/capa-day.png": "/Portfolio/static/media/capa-day.2a86c8fe1deafccb6854.png",
     "static/media/model.png": "/Portfolio/static/media/model.cb78ebf3fcb804fe7c72.png",
     "static/media/eu.jpg": "/Portfolio/static/media/eu.c6161967cb20c55618be.jpg",
     "static/media/checkapp.png": "/Portfolio/static/media/checkapp.603d358868742b2d02a6.png",
@@ -23,12 +24,12 @@
     "static/media/pre.svg": "/Portfolio/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/Portfolio/index.html",
     "main.2a6a63ad.css.map": "/Portfolio/static/css/main.2a6a63ad.css.map",
-    "main.b25a4a32.js.map": "/Portfolio/static/js/main.b25a4a32.js.map",
+    "main.ebc23ea5.js.map": "/Portfolio/static/js/main.ebc23ea5.js.map",
     "415.4d6acbeb.chunk.js.map": "/Portfolio/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2a6a63ad.css",
-    "static/js/main.b25a4a32.js"
+    "static/js/main.ebc23ea5.js"
   ]
 }
