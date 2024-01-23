@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import cabril from "../../Assets/Projects/cabril.png";
+import cabril from "../../Assets/Projects/capa-day.png";
 import beetrial from "../../Assets/Projects/VU6fU2.png";
 import { Container, Row } from 'react-bootstrap';
 import shadow from "../../Assets/shadow-comp.png";
@@ -156,7 +156,7 @@ function ProjectPage1() {
             <br /><br /><br /><br />
 
 
-            <h2>Additional Features: Data Exploration</h2>
+            <h1 style={{ paddingBottom: 50 }} className="contacts-title">Additional Features: Data Exploration</h1>
             Implemented as proof-of-concept, the data exploration features allow the user to open PDF files related to 
             visual inspection reports. Additionally, certain points are marked on the dam face with which the user can interact 
             to open up an interafce with photographic records of the evolution of the loacation.
