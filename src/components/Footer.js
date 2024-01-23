@@ -20,8 +20,10 @@ function Footer() {
           {/* <h3>Initial Template by SB</h3> */}
           {/* <h3>Made with React.js</h3> */}
           <div className="construction-container">
-            <LuConstruction />
+            <LuConstruction /> 
+            &nbsp;&nbsp;
             <h3> Site Under Construction </h3>
+            &nbsp;&nbsp;
             <LuConstruction />
           </div>
         </Col>
