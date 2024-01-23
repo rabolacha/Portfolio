@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/eu.jpg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -41,14 +41,12 @@ function Home2() {
               Bridging <span className="purple">Creativity</span> and <span className="purple">Code</span>: A Design-Driven Software Engineer
             </h1> */}
             <p className="home-about-body">
-              I'm a software engineer with a serious love for design.
-              I'm that tech enthusiast who hangs out at the intersection of creativity, technology, and the gaming universe. 🎮✨
+              I'm a software engineer passionate about design.
+              As a that tech enthusiast, I like creativity, technology, and the gaming universe. 🎮✨
               <br /><br />
-              My coding journey is like a rollercoaster fueled by curiosity, a knack for cool visuals, and a real soft spot for user-friendly stuff. 🌈🚀
+              My coding journey fueled by curiosity, a love for cool visuals, and a preference for user-friendly solutions.
               <br /><br />
-              I believe my knack for tech and love for design make a killer combo.
-              Every project I dive into gets a sprinkle of innovation, thanks to my unique blend of skills.
-              Let's team up and bring some seriously awesome vibes to the digital world!🌐✨
+              I believe the combination of my technical skills and design passion brings innovation to every project. Let's collaborate and bring positive vibes to the digital world!🌐✨
               <br /><br /><br />
               I like classics such as
               <i>

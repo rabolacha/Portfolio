@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import cabril from "../../Assets/Projects/environjap.png";
+import cabril from "../../Assets/Projects/teste-capa2.png";
 import beetrial from "../../Assets/Projects/VU6fU2.png";
 import checkapp from "../../Assets/Projects/checkapp.png";
 import luchador from "../../Assets/Projects/luchador.png";
@@ -15,7 +15,7 @@ import { MdArrowForwardIos } from "react-icons/md";
 function Projects() {
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
   const handlePrevClick = () => {
-    setCurrentProjectIndex((currentProjectIndex - 1) % projects.length);
+    setCurrentProjectIndex((currentProjectIndex - 1 + projects.length) % projects.length);
   };
 
   const handleNextClick = () => {
@@ -34,7 +34,7 @@ function Projects() {
     {
       imgPath: beetrial,
       title: "Bee Trial",
-      description: "2D side scroller game that follows the story of a bee.",
+      description: "2D side scroller game that follows the story of a bee. Bee Trial was showcased in the IST Game Fair, which emerged as one of the most popular stands.",
       itchLink: "https://pedormente.itch.io/bee-trial",
       ytLink: "https://www.youtube.com/watch?v=AhUhf2OcMTc",
       tags: ["Unity", "C#", "Photoshop"],
@@ -77,7 +77,7 @@ function Projects() {
       projectId: "howl",
       tags: ["Photoshop"]
     }
-    // ... add other projects ...
+ 
   ]
 
 
@@ -92,9 +92,6 @@ function Projects() {
 
         </Row>
 
-        <Row>
-
-        </Row>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
           <Row className="project-row" >
@@ -112,8 +109,8 @@ function Projects() {
                 pageLink={projects[currentProjectIndex].pageLink}
                 itchLink={projects[currentProjectIndex].itchLink}
                 figLink={projects[currentProjectIndex].figLink}
-                tags={[projects[currentProjectIndex].tags]}
-                projectId={[projects[currentProjectIndex].projectId]}
+                tags={projects[currentProjectIndex].tags}
+                projectId={projects[currentProjectIndex].projectId}
               />
 
 

@@ -3,14 +3,16 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Github from "./Github";
 import Techstack from "./Techstack";
+import Interests from "./Interests";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import Languages from "./Languages";
 
 function About() {
   return (
     <Container fluid className="about-section">
-      <Particle />
+      {/* <Particle /> */}
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
@@ -21,9 +23,9 @@ function About() {
               paddingBottom: "50px",
             }}
           >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
-            </h1>
+            <h1 style={{ paddingBottom: 50 }} className="heading">
+            About Me
+          </h1>
             <Aboutcard />
           </Col>
           <Col
@@ -34,16 +36,27 @@ function About() {
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
-        <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+        <h1 className="heading" style={{ paddingTop: "50px" }}>
+          Technical Skillset
         </h1>
 
         <Techstack />
 
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
+        <h1 className="heading" style={{ paddingTop: "50px" }}>
+          Tools I use
         </h1>
         <Toolstack />
+
+        <h1 className="heading" style={{ paddingTop: "50px" }}>
+          Interests
+        </h1>
+        <Interests />
+
+        <h1 className="heading" style={{ paddingTop: "50px" }}>
+          Languages
+        </h1>
+        <Languages/>
+    
 
         {/* <Github /> */}
       </Container>

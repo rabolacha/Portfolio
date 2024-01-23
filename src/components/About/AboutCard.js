@@ -16,19 +16,8 @@ function AboutCard() {
             I have completed a MSc in Computer Science and Engineering at Instituto Superior Técnico, University of Lisbon, with a score of 18/20.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+
           </p>
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Playing Games
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Learning Languages
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Travelling
-            </li>
-          </ul>
 
           {/* <p style={{ color: "rgb(155 126 172)" }}>
             "Strive to build things that make a difference!"{" "}

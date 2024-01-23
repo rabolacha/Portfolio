@@ -4,9 +4,13 @@ html {
     rgba(96, 67, 183, 0.904) */
     );
 
+  --azul-claro: #63e5f1;
+  --roxo: #223fb2f1;
+  --imp-text-color: var(--roxo);
+
   --image-gradient: linear-gradient(to bottom left,
-      #63e5f1f1 -45%,
-      #223fb2f1,
+      var(--azul-claro) -45%,
+      var(--roxo),
       #2422b2f1);
 
 
@@ -14,11 +18,11 @@ html {
       #fffffff6,
       #fffffff6);
 
-  --imp-text-color: #223fb2f1;
 
   max-width: 100%;
   margin: 0;
   padding: 0;
+  
 }
 
 .purple {
@@ -70,13 +74,13 @@ button:focus {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #7863f1;
+  background: var(--azul-claro);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #63e5f1;
+  background: var(--roxo);
   border-radius: 12px;
 }
 
@@ -98,7 +102,7 @@ button:focus {
   font-size: 1.2rem !important;
 }
 
-.navbar-colored{
+.navbar-colored {
   background-image: var(--image-gradient), url(./Assets/noise2.png);
 }
 
@@ -170,8 +174,9 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
+  /* height: 1.4em !important; */
   width: 2.5em !important;
+  filter: grayscale(100%) contrast(300%) brightness(100%) invert(100%);
 }
 
 .navbar.navbar .nav-text {
@@ -214,7 +219,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #32cee2;
+  background: var(--azul-claro);
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -286,6 +291,7 @@ button:focus {
 
 
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
 .main-top-header {
   color: white;
@@ -301,13 +307,13 @@ button:focus {
   /* left: 11%; */
   left: -10px;
   font-family: 'Silkscreen', sans-serif;
-  color: #63e5f1;
+  color: var(--azul-claro);
   z-index: -1;
 }
 
 .main-title {
   font-size: 25vh;
-  font-family: fantasy;
+  font-family: 'DM Serif Display', serif;
   justify-content: center;
   /* padding-top: 80px !important; */
   position: relative;
@@ -354,32 +360,32 @@ button:focus {
   /* padding-left: 50px !important; */
   font-size: 5rem;
   font-weight: bold;
-  color: #223fb2f1;
-  font-family: fantasy;
+  color: var(--roxo);
+  font-family: 'DM Serif Display', serif;
   text-align: left;
 }
 
 .heading-name {
   /* font-size: 2.5em !important;
   padding-left: 45px !important; */
-  padding-top: 40px;
+  /* padding-top: 40px; */
   text-align: left;
 
 }
 
 .main-name {
-  color: #223fb2f1;
+  color: var(--roxo);
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #223fb2f1 !important;
+  color: var(--roxo) !important;
   font-weight: 600 !important;
 }
 
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #223fb2f1 !important;
+  color: var(--roxo) !important;
 }
 
 @media (max-width: 767px) {
@@ -417,7 +423,7 @@ button:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  color: #223fb2f1;
+  color: var(--roxo);
   max-width: 244px;
 }
 
@@ -523,7 +529,7 @@ button:focus {
 /* --------- */
 .footer {
   /* background-image: linear-gradient(to left, rgb(141, 216, 229), rgb(180, 153, 215)); */
-  background-color: #223fb2f1;
+  background-color: var(--roxo);
   background-image: var(--image-gradient), url(./Assets/noise2.png);
   bottom: 0 !important;
   padding-top: 10px !important;
@@ -535,7 +541,14 @@ button:focus {
 
 .footer-copywright {
   text-align: center !important;
+  color: white;
 }
+.construction-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .footer-body {
   z-index: 1;
@@ -585,7 +598,7 @@ button:focus {
   cursor: pointer;
   padding: 0%;
   width: fit-content !important;
-  color: #223fb2f1;
+  color: var(--roxo);
 }
 
 .project-arrows :hover {
@@ -597,7 +610,7 @@ button:focus {
   padding-top: 150px !important;
   padding-bottom: 30px !important;
 
-  background-image: var(--background-gradient), url(./Assets/noise2.png);
+  /* background-image: var(--background-gradient), url(./Assets/noise2.png); */
 }
 
 .project-card {
@@ -634,15 +647,15 @@ button:focus {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
   align-items: flex-end;
   align-content: flex-end;
 }
 
 .project-card-title {
-  font-size: 3rem;
-  padding-bottom: 50px;
-  color: #223fb2f1;
+  font-size: 4rem;
+  padding-bottom: 40px;
+  color: var(--roxo);
 }
 
 .project-card-description {
@@ -651,19 +664,25 @@ button:focus {
   max-width: 280px;
   text-align: end;
   color: #112969;
+  overflow-y: scroll;
 }
 
 .project-card-buttons a {
   display: inline-block;
   text-decoration: none;
   padding: 8px 12px;
-  background-color: #223fb2f1;
+  background-color: var(--roxo);
   color: #fff;
   border-radius: 4px;
 }
 
 .project-card-tags {
-  margin-top: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
 }
 
 .project-card-view {
@@ -707,8 +726,17 @@ button:focus {
   margin-right: 5px;
   /* border: 1px solid #ccc; */
   padding: 3px 8px;
-  /* border-radius: 4px; */
+  border-radius: 4px;
 }
+
+.project-page-container {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+
+  /* background-image: var(--background-gradient), url(./Assets/noise2.png); */
+}
+
 
 .blog-card {
   padding-top: 50px !important;
@@ -755,8 +783,8 @@ button:focus {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #223fb2f1 !important;
-  border-color: #223fb2f1 !important;
+  background-color: var(--roxo) !important;
+  border-color: var(--roxo) !important;
 }
 
 .btn-primary:hover {
@@ -792,9 +820,10 @@ button:focus {
   opacity: 0.93 !important;
   /* border: 1.7px solid rgba(200, 137, 230, 0.637) !important; */
   /* border-top: 1.7px solid !important; */
-  border-image: linear-gradient(to right, white, #C7D2FE, white) 30;
-  border-top-width: 1.7px;
-  border-top-style: solid;
+  /* border-image: linear-gradient(to right, white, #C7D2FE, white) 30; */
+  border-width: 0.5%;
+  border-style: solid;
+  border-color: var(--roxo);
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
@@ -802,7 +831,7 @@ button:focus {
   /* box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important; */
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
-  background-image: linear-gradient(white, #C7D2FE);
+  /* background-image: linear-gradient(white, #C7D2FE); */
 }
 
 @media (max-width: 767px) {
@@ -814,13 +843,38 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  border: 2.2px solid var(--azul-claro) !important;
 }
 
 .tech-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
 }
+
+.skills {
+  border-bottom: #9da2c2 solid 1px;
+
+}
+
+.languages {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: large;
+}
+
+.language {
+  align-content: space-between;
+  padding: 5px;
+  text-align: left;
+}
+
+.lang-lvl {
+  text-align: right;
+}
+
 
 .quote-card-view {
   border: none !important;

@@ -8,6 +8,7 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { FaItchIo } from "react-icons/fa";
+import { LuConstruction } from "react-icons/lu";
 
 function Footer() {
   let date = new Date();
@@ -17,6 +18,12 @@ function Footer() {
       <Row>
         <Col md="4" className="footer-copywright">
           {/* <h3>Initial Template by SB</h3> */}
+          {/* <h3>Made with React.js</h3> */}
+          <div className="construction-container">
+            <LuConstruction />
+            <h3> Site Under Construction </h3>
+            <LuConstruction />
+          </div>
         </Col>
         <Col md="4" className="footer-copywright">
           {/* <h3>Copyright © {year} SB</h3> */}
@@ -27,7 +34,7 @@ function Footer() {
               <a
                 href="raquel.o.chin@mail.com"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <IoIosMail />
@@ -37,7 +44,7 @@ function Footer() {
               <a
                 href="https://raqueque.itch.io/"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaItchIo />
@@ -47,7 +54,7 @@ function Footer() {
               <a
                 href="https://www.linkedin.com/in/raquelochin/"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn />

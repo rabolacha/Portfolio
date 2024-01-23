@@ -15,7 +15,6 @@ function ProjectCards(props) {
     // Prevent the click event from propagating to the Link element
     e.stopPropagation();
   };
-
   return (
     <Link to={`/project/${props.projectId}`} style={{ textDecoration: 'none' }}>
      <div className="project-card">
@@ -111,13 +110,16 @@ function ProjectCards(props) {
              </div>
 
              {/* Tags */}
-          <div className="project-card-tags">
-            {props.tags &&
-              props.tags.map((tag, index) => (
-                <span key={index} className="custom-tag">
-                  {tag}
-                </span>
-              ))}
+       <div className="project-card-tags">
+  {props.tags &&
+    props.tags.map((tag, index) => {
+      return (
+        <span key={index} className="custom-tag">
+          {tag}
+        </span>
+      );
+    })}
+
           </div>
         </div>
       </div>
