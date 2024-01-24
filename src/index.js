@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from 'react-router-dom';
 
 
-const routerBaseName = "/Portfolio/";
+const routerBaseName = "/Portfolio";
 
 ReactDOM.render(
   <BrowserRouter basename={routerBaseName}>
