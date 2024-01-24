@@ -153,7 +153,7 @@ function ProjectPage1() {
             realism in the VR environment.
 
             {/* meter os wireframes */}
-            <br /><br /><br /><br />
+            <br /><br /><br /><br /><br />
 
 
             <h1 style={{ paddingBottom: 50 }} className="contacts-title">Additional Features: Data Exploration</h1>

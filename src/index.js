@@ -6,10 +6,10 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from 'react-router-dom';
 
 
-const routerBaseName = '/Portfolio';
+const routerBaseName = "/Portfolio/";
 
 ReactDOM.render(
-  <BrowserRouter >
+  <BrowserRouter basename={routerBaseName}>
   < App />
   </BrowserRouter>,
    document.getElementById('root')
