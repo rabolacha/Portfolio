@@ -20,6 +20,21 @@ function ProjectPage2() {
                 Apart from this, I also was in charge of managing the game's website and curate the game stand experience
                 for the game fair by designing posters, stickers and costumes.
             </p>
+
+            <h1 style={{ paddingBottom: 50 }} className="contacts-title">Game Art</h1>
+            <h2>Characters</h2>
+            <p>The game followed a cute and handmade aesthetic, so the characters had to be more simplified 
+                and convey that aesthetic, with more round and bright shapes.
+                On the other hand, it was also supposed to convey the dangerous nature of the wasp enemies, 
+                which took on a more sharp and dark appearance.
+            </p>
+            <img src={shadow} className="img-fluid" alt="dam comparison" />
+            <br /><br /><br /><br />
+            <h2>UI</h2>
+            <p>
+            </p>
+            <img src={shadow} className="img-fluid" alt="dam comparison" />
+            <br /><br /><br /><br />
         </Container>
     )
 }
