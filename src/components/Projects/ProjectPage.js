@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
-import cabril from "../../Assets/Projects/cabril.png";
-import beetrial from "../../Assets/Projects/VU6fU2.png";
 import { Container, Row } from 'react-bootstrap';
+import cabril from "../../Assets/Projects/cabril/cabril.png";
+import beetrial from "../../Assets/Projects/bee/VU6fU2.png";
 import ProjectPage1 from "./ProjectPage1";
 import ProjectPage2 from "./ProjectPage2";
 

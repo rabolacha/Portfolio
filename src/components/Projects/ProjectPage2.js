@@ -1,7 +1,8 @@
 import { useParams } from 'react-router-dom';
-import cabril from "../../Assets/Projects/cabril.png";
-import beetrial from "../../Assets/Projects/VU6fU2.png";
 import { Container, Row } from 'react-bootstrap';
+import cabril from "../../Assets/Projects/cabril/cabril.png";
+import beetrial from "../../Assets/Projects/bee/VU6fU2.png";
+import shadow from "../../Assets/Projects/bee/VU6fU2.png"; 
 
 function ProjectPage2() {
     return (

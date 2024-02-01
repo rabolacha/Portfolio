@@ -74,13 +74,13 @@ button:focus {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--azul-claro);
+  background: var(--roxo);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--roxo);
+  background: var(--azul-claro);
   border-radius: 12px;
 }
 
@@ -1041,4 +1041,18 @@ button:focus {
 
 .fork-btn-inner::after {
   display: none !important;
+}
+
+.projects-title{
+  font-weight: bold;
+  color: var(--roxo)
+}
+
+.project-row-1{
+  display: flex;
+  text-align: left;
+}
+
+.project-row-2{
+  text-align: left;
 }
