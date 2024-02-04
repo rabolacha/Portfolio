@@ -1,38 +1,50 @@
 import { useParams } from 'react-router-dom';
-import { Container, Row } from 'react-bootstrap';
-import cabril from "../../Assets/Projects/cabril/cabril.png";
+import { Container, Row, Col } from 'react-bootstrap';
+import chars from "../../Assets/Projects/bee/chars.png";
 import beetrial from "../../Assets/Projects/bee/VU6fU2.png";
-import shadow from "../../Assets/Projects/bee/VU6fU2.png"; 
+import shadow from "../../Assets/Projects/bee/VU6fU2.png";
 
 function ProjectPage2() {
     return (
         <Container>
-            <img src={cabril} style={{ width: '50%', height: 'auto' }} />
-            <br /><br /><br />
-            <p>I played a central role in Bee Trial’s development, taking charge of <b className="purple">illustration</b>,
-                <b className="purple">character, level, and interface design</b>, as well as <b className="purple">marketing and event planning strategies</b>.
-                My contributions ensured a cohesive and engaging visual experience throughout the video game.</p>
-            <p>Initially I contributed to <b className="purple">programming the weapons</b>, but then changed to taking charge of the game's aesthetic
-                choices. This included <b className="purple">designing</b> the game's environment to match the story, as well as designing the main character, allies, and enemies accordingly.</p>
-            <p> I also designed the remaining assets such as weapons and powerups, as well as the user interfaces
-                and skins for the player.
-            </p>
-            <p>
-                Apart from this, I also was in charge of managing the game's website and curate the game stand experience
-                for the game fair by designing posters, stickers and costumes.
-            </p>
+            <Row style={{ paddingTop: 50 }} className='project-row-2'>
+                <Row>
+                    <img src={beetrial} className="img-fluid" alt="bee game" />
+                </Row>
+                <Row>
+                    <p>I played a central role in Bee Trial’s development, taking charge of <b className="purple">illustration</b>,
+                        <b className="purple">character, level, and interface design</b>, as well as <b className="purple">marketing and event planning strategies</b>.
+                        My contributions ensured a cohesive and engaging visual experience throughout the video game.</p>
+                    <p>Initially I contributed to <b className="purple">programming the weapons</b>, but then changed to taking charge of the game's aesthetic
+                        choices. This included <b className="purple">designing</b> the game's environment to match the story, as well as designing the main character, allies, and enemies accordingly.</p>
+                    <p> I also designed the remaining assets such as weapons and powerups, as well as the user interfaces
+                        and skins for the player.
+                    </p>
+                    <p>
+                        Apart from this, I also was in charge of managing the game's website and curate the game stand experience
+                        for the game fair by designing posters, stickers and costumes.
+                    </p>
+                </Row>
+            </Row>
 
-
+            <br /><br />
 
             <h1 style={{ paddingBottom: 50 }} className="contacts-title">Game Art</h1>
             <p>The Assets were all created using Medibang Paint and Photoshop.</p>
 
-            <h2>Characters</h2>
-            <p>The game followed a cute and handmade aesthetic, so the characters had to be more simplified
-                and convey that aesthetic, with more round and bright shapes.
-                On the other hand, it was also supposed to convey the dangerous nature of the wasp enemies,
-                which took on a more sharp and dark appearance.
-            </p>
+            <Row className='project-row-1'>
+                <Col>
+                    <h2>Characters</h2>
+                    <p>The game followed a cute and handmade aesthetic, so the characters had to be more simplified
+                        and convey that aesthetic, with more round and bright shapes.
+                        On the other hand, it was also supposed to convey the dangerous nature of the wasp enemies,
+                        which took on a more sharp and dark appearance.
+                    </p>
+                </Col>
+                <Col>
+                    <img src={chars} className="img-fluid" alt="characters" />
+                </Col>
+            </Row>
             {/* meter fotos dos chacters e early designs + sketches */}
             <br /><br /><br /><br />
 
@@ -81,7 +93,7 @@ function ProjectPage2() {
                 everything he can to survive, even if it means betraying his own colony…
 
             </p>
-            <img src={shadow} className="img-fluid" alt="dam comparison" />
+            {/* <img src={shadow} className="img-fluid" alt="dam comparison" /> */}
             <br /><br /><br /><br />
 
             <h2>Base References</h2>
@@ -109,14 +121,14 @@ function ProjectPage2() {
             </ul>
 
             <p>
-                The inventory system is tied with the gameplay but provides info about the story. 
-                Items will be dropped on very rare occasions and will remain in the player forever, 
+                The inventory system is tied with the gameplay but provides info about the story.
+                Items will be dropped on very rare occasions and will remain in the player forever,
                 if he catches them. They will give a visual  effect if chosen, but all of them will have something to do with the lore.
 
-                Other bees interact with the player in different ways, according to where they are in the story. 
-                They will help in the beginning, and cut relations when the player starts killing bees. The player will 
+                Other bees interact with the player in different ways, according to where they are in the story.
+                They will help in the beginning, and cut relations when the player starts killing bees. The player will
                 then be able to choose if he wants to befriend other bees or continue in the dark path of the story.
-                Power Ups will balance the fire power of the player throughout the run and different weapons will give 
+                Power Ups will balance the fire power of the player throughout the run and different weapons will give
                 the player choice in how they feel better playing the game.
             </p>
 

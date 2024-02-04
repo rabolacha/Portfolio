@@ -587,11 +587,13 @@ button:focus {
 /* Projects */
 /* --------- */
 
-.project-row {
+.projects-side-arrows{
   display: flex;
-  flex-wrap: nowrap !important;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  
 }
 
 .project-arrows {
@@ -609,22 +611,35 @@ button:focus {
 .project-section {
   position: relative !important;
   padding-top: 150px !important;
-  padding-bottom: 30px !important;
+  /* padding-bottom: 30px !important; */
+  height: 100vh !important;
+  width: 100% !important;
+  overflow-x: hidden;
 
   /* background-image: var(--background-gradient), url(./Assets/noise2.png); */
 }
 
-.project-card {
+.projects-card {
   padding-top: 50px !important;
   padding-bottom: 80px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
-  height: auto !important;
 
   display: flex;
   overflow: hidden;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   justify-content: space-between;
+}
+
+.projects-card-img{
+  width: 100%;
+}
+
+.projects-card-col{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+
 }
 
 /* .project-card-link {
@@ -655,18 +670,19 @@ button:focus {
 
 .project-card-title {
   font-size: 4rem;
-  padding-bottom: 40px;
+  padding-bottom: 1rem;
   color: var(--roxo);
 }
 
 .project-card-description {
   font-size: 1rem;
-  padding-bottom: 25px;
-  max-width: 280px;
+  /* padding-bottom: 25px; */
+  /* max-width: 280px; */
   text-align: end;
   color: #112969;
   overflow-y: scroll;
 }
+
 
 .project-card-buttons a {
   display: inline-block;
@@ -678,7 +694,7 @@ button:focus {
 }
 
 .project-card-tags {
-  margin-top: 20px;
+  padding-bottom: 1em;
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-end;
