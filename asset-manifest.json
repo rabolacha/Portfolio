@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.afd52fb9.css",
-    "main.js": "/Portfolio/static/js/main.60918bec.js",
+    "main.js": "/Portfolio/static/js/main.882cb611.js",
     "static/js/415.4d6acbeb.chunk.js": "/Portfolio/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/movie.png": "/Portfolio/static/media/movie.a86c0a167dba933f7fed.png",
@@ -20,6 +20,7 @@
     "static/media/gnss.png": "/Portfolio/static/media/gnss.d95731ed48a0abbabd25.png",
     "static/media/VU6fU2.png": "/Portfolio/static/media/VU6fU2.76e506a74b14e315626b.png",
     "static/media/ui.png": "/Portfolio/static/media/ui.6289dd679c685234cf8c.png",
+    "static/media/movie2.png": "/Portfolio/static/media/movie2.c051bc0b4260d18cd325.png",
     "static/media/data2.png": "/Portfolio/static/media/data2.356ec3ce9d0c79893b73.png",
     "static/media/stand.jpg": "/Portfolio/static/media/stand.25e70554572467d01495.jpg",
     "static/media/lights.png": "/Portfolio/static/media/lights.3062e09200b3e22b5126.png",
@@ -41,9 +42,11 @@
     "static/media/metashape.png": "/Portfolio/static/media/metashape.da4d4903c32e11ba79cc.png",
     "static/media/hex.png": "/Portfolio/static/media/hex.8b26aa922c9ad9568558.png",
     "static/media/mood.png": "/Portfolio/static/media/mood.db551a2d34d25ee9011a.png",
+    "static/media/limons.png": "/Portfolio/static/media/limons.e56e33d7334887868512.png",
     "static/media/main.png": "/Portfolio/static/media/main.1a4d9f76e9c5f62efaf7.png",
     "static/media/coregameplayStoryboard.png": "/Portfolio/static/media/coregameplayStoryboard.09364a1cb34d77ce0dcc.png",
     "static/media/Capture6.PNG": "/Portfolio/static/media/Capture6.6d2cda14552d676f286e.PNG",
+    "static/media/sketches2.png": "/Portfolio/static/media/sketches2.4f3eebe4b00628c16f0d.png",
     "static/media/lowtohigh2.png": "/Portfolio/static/media/lowtohigh2.4b6a7311ef13ab9744ff.png",
     "static/media/coregameplayStoryboard2.png": "/Portfolio/static/media/coregameplayStoryboard2.28b2757b25c75e852b6a.png",
     "static/media/gameelements.png": "/Portfolio/static/media/gameelements.598770cd7d6da8868e50.png",
@@ -55,6 +58,7 @@
     "static/media/Capture1.PNG": "/Portfolio/static/media/Capture1.13bd07643c145b826b4e.PNG",
     "static/media/home-main.svg": "/Portfolio/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
     "static/media/about.png": "/Portfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/wireframe.png": "/Portfolio/static/media/wireframe.868b76d9643ac2991eb3.png",
     "static/media/CVRaquel.pdf": "/Portfolio/static/media/CVRaquel.6a8fb92dcd306ea12dbe.pdf",
     "static/media/check.png": "/Portfolio/static/media/check.5fc48dbec760e0a04618.png",
     "static/media/Capture10.PNG": "/Portfolio/static/media/Capture10.2c3456dd4308b2f2b4b7.PNG",
@@ -73,12 +77,12 @@
     "static/media/pre.svg": "/Portfolio/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/Portfolio/index.html",
     "main.afd52fb9.css.map": "/Portfolio/static/css/main.afd52fb9.css.map",
-    "main.60918bec.js.map": "/Portfolio/static/js/main.60918bec.js.map",
+    "main.882cb611.js.map": "/Portfolio/static/js/main.882cb611.js.map",
     "415.4d6acbeb.chunk.js.map": "/Portfolio/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.afd52fb9.css",
-    "static/js/main.60918bec.js"
+    "static/js/main.882cb611.js"
   ]
 }
