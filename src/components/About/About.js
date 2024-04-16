@@ -14,16 +14,16 @@ function About() {
     <Container fluid className="about-section">
       {/* <Particle /> */}
       <Container>
-        <Row style={{ justifyContent: "center", padding: "10px" }}>
+        <Row style={{ justifyContent: "center" }}>
           <Col
             md={7}
             style={{
               justifyContent: "center",
-              paddingTop: "30px",
+              
               paddingBottom: "50px",
             }}
           >
-            <h1 style={{ paddingBottom: 50 }} className="heading">
+            <h1 className="heading">
             About Me
           </h1>
             <Aboutcard />

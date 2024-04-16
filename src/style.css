@@ -22,7 +22,7 @@ html {
   max-width: 100%;
   margin: 0;
   padding: 0;
-  
+
 }
 
 .purple {
@@ -161,7 +161,7 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-image: var(--image-gradient), url(./Assets/noise2.png);
   }
 
   .navbar-nav .nav-item a::after {
@@ -544,7 +544,8 @@ button:focus {
   text-align: center !important;
   color: white;
 }
-.construction-container{
+
+.construction-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -587,13 +588,13 @@ button:focus {
 /* Projects */
 /* --------- */
 
-.projects-side-arrows{
+.projects-side-arrows {
   display: flex;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  
+
 }
 
 .project-arrows {
@@ -609,12 +610,11 @@ button:focus {
 }
 
 .project-section {
-  position: relative !important;
   padding-top: 150px !important;
   /* padding-bottom: 30px !important; */
-  height: 100vh !important;
-  width: 100% !important;
-  overflow-x: hidden;
+  margin-bottom: 10em;
+  height: max-content !important;
+
 
   /* background-image: var(--background-gradient), url(./Assets/noise2.png); */
 }
@@ -629,15 +629,15 @@ button:focus {
   justify-content: space-between;
 }
 
-.projects-card-img{
+.projects-card-img {
   width: 100%;
 }
 
-.projects-card-col{
+.projects-card-col {
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-end;
-  align-items: flex-end;
+  align-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
 
 }
@@ -664,21 +664,22 @@ button:focus {
   justify-content: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: flex-end;
-  align-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
 .project-card-title {
-  font-size: 4rem;
+  font-size: 4.8rem;
   padding-bottom: 1rem;
   color: var(--roxo);
+  text-align: left;
 }
 
 .project-card-description {
-  font-size: 1rem;
+  font-size: 1.4rem;
   /* padding-bottom: 25px; */
   /* max-width: 280px; */
-  text-align: end;
+  text-align: start;
   color: #112969;
   overflow-y: scroll;
 }
@@ -691,15 +692,17 @@ button:focus {
   background-color: var(--roxo);
   color: #fff;
   border-radius: 4px;
+  font-size: 1.2em;
 }
 
 .project-card-tags {
   padding-bottom: 1em;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-content: center;
   align-items: center;
+  font-size: 1.2em;
 }
 
 .project-card-view {
@@ -753,7 +756,59 @@ button:focus {
 
   /* background-image: var(--background-gradient), url(./Assets/noise2.png); */
 }
+.heading {
+  margin-bottom: 1em;
+}
 
+.projects-title {
+  font-weight: bold;
+  color: var(--roxo)
+}
+
+
+.project-row-1 {
+  display: flex;
+  text-align: justify ;
+  margin-bottom: 3em;
+}
+
+.project-row-2 {
+  text-align: justify ;
+  margin-bottom: 3em;
+}
+
+.project-img{
+  margin-top: 0.6em !important;
+}
+@media (max-width: 767px) {
+  .heading {
+    font-size: 3rem;
+  }
+  .projects-title {
+    font-weight: bold;
+    color: var(--roxo);
+    font-size: 1.8em;
+  }
+  
+  .project-row-1 {
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    font-size: 0.95em;
+    margin-bottom: 2.6em;
+    
+  }
+  
+  .project-row-2 {
+    font-size: 0.95em;
+    margin-bottom: 2.6em;
+  
+  }
+
+  .project-row-1 h2, .project-row-2 h2{
+    font-size: 1.2em;
+  }
+}
 
 .blog-card {
   padding-top: 50px !important;
@@ -790,6 +845,10 @@ button:focus {
   padding: 20px !important;
   opacity: 0.8 !important;
   border-radius: 10px !important;
+}
+
+.fig-caption{
+  text-align: center !important;
 }
 
 .blog-img {
@@ -1059,16 +1118,4 @@ button:focus {
   display: none !important;
 }
 
-.projects-title{
-  font-weight: bold;
-  color: var(--roxo)
-}
 
-.project-row-1{
-  display: flex;
-  text-align: left;
-}
-
-.project-row-2{
-  text-align: left;
-}

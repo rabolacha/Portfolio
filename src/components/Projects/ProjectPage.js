@@ -1,9 +1,14 @@
 import { useParams } from 'react-router-dom';
 import { Container, Row } from 'react-bootstrap';
-import cabril from "../../Assets/Projects/cabril/cabril.png";
-import beetrial from "../../Assets/Projects/bee/VU6fU2.png";
-import ProjectPage1 from "./ProjectPage1";
-import ProjectPage2 from "./ProjectPage2";
+import CabrilDamVR from "./CabrilDamVR";
+import BeeTrial from "./BeeTrial";
+import CheckApp from "./CheckApp";
+import VirtualMonitors from "./VirtualMonitors";
+import Hexotic from "./Hexotic";
+import LuchaDor from "./LuchaDor";
+import PromoPoster from "./PromoPoster";
+import MoviePoster from "./MoviePoster";
+
 
 function ProjectPage() {
   const { projectId } = useParams();
@@ -17,7 +22,7 @@ function ProjectPage() {
     <Container className='project-page-container'>
       <Container>
         <Row>
-          <h1 style={{ paddingBottom: 50 }} className="heading">
+          <h1 className="heading">
             {(() => {
               switch (projectId) {
                 case "cabrildamvr":
@@ -26,6 +31,8 @@ function ProjectPage() {
                   return "Bee Trial ";
                 case "checkapp":
                   return "CheckApp ";
+                  case "virtualmonitors":
+                  return "AR Monitors ";
                 case "luchador":
                   return "Lucha.Dor ";
                 case "hex":
@@ -43,61 +50,29 @@ function ProjectPage() {
         </Row>
 
         {projectId == 'cabrildamvr' && (
-          <ProjectPage1/>
+          <CabrilDamVR/>
           
         )}
         {projectId == 'beetrial' && (
-          <ProjectPage2/>
+          <BeeTrial/>
         )}
         {projectId == 'checkapp' && (
-          <>
-
-            <img src={cabril} alt={`Project: ${projectId.title}`} style={{ width: '50%', height: 'auto' }} />
-            <br /><br /><br />
-            <p>I played a central role in Bee Trial’s development, taking charge of <b className="purple">illustration</b>,
-              <b className="purple">character, level, and interface design</b>, as well as <b className="purple">marketing and event planning strategies</b>.
-              My contributions ensured a cohesive and engaging visual experience throughout the video game.</p>
-          </>
+          <CheckApp/>
+        )}
+        {projectId == 'virtualmonitors' && (
+          <VirtualMonitors/>
         )}
         {projectId == 'luchador' && (
-          <>
-
-            <img src={cabril} alt={`Project: ${projectId.title}`} style={{ width: '50%', height: 'auto' }} />
-            <br /><br /><br />
-            <p>I played a central role in Bee Trial’s development, taking charge of <b className="purple">illustration</b>,
-              <b className="purple">character, level, and interface design</b>, as well as <b className="purple">marketing and event planning strategies</b>.
-              My contributions ensured a cohesive and engaging visual experience throughout the video game.</p>
-          </>
+          <LuchaDor/>
         )}
         {projectId == 'hex' && (
-          <>
-
-            <img src={cabril} alt={`Project: ${projectId.title}`} style={{ width: '50%', height: 'auto' }} />
-            <br /><br /><br />
-            <p>I played a central role in Bee Trial’s development, taking charge of <b className="purple">illustration</b>,
-              <b className="purple">character, level, and interface design</b>, as well as <b className="purple">marketing and event planning strategies</b>.
-              My contributions ensured a cohesive and engaging visual experience throughout the video game.</p>
-          </>
+          <Hexotic/>
         )}
         {projectId == 'pureleaf' && (
-          <>
-
-            <img src={cabril} alt={`Project: ${projectId.title}`} style={{ width: '50%', height: 'auto' }} />
-            <br /><br /><br />
-            <p>I played a central role in Bee Trial’s development, taking charge of <b className="purple">illustration</b>,
-              <b className="purple">character, level, and interface design</b>, as well as <b className="purple">marketing and event planning strategies</b>.
-              My contributions ensured a cohesive and engaging visual experience throughout the video game.</p>
-          </>
+          <PromoPoster/>
         )}
         {projectId == 'howl' && (
-          <>
-
-            <img src={cabril} alt={`Project: ${projectId.title}`} style={{ width: '50%', height: 'auto' }} />
-            <br /><br /><br />
-            <p>I played a central role in Bee Trial’s development, taking charge of <b className="purple">illustration</b>,
-              <b className="purple">character, level, and interface design</b>, as well as <b className="purple">marketing and event planning strategies</b>.
-              My contributions ensured a cohesive and engaging visual experience throughout the video game.</p>
-          </>
+          <MoviePoster/>
         )}
       </Container>
     </Container>

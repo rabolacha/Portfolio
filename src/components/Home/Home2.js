@@ -41,22 +41,26 @@ function Home2() {
               Bridging <span className="purple">Creativity</span> and <span className="purple">Code</span>: A Design-Driven Software Engineer
             </h1> */}
             <p className="home-about-body">
-              I'm a software engineer passionate about design.
-              As a that tech enthusiast, I like creativity, technology, and the gaming universe. 🎮✨
+              I'm a creative software engineer passionate about design.
+              As a tech enthusiast, I unite creativity, technology, and the gaming universe. 🎮✨
               <br /><br />
-              My coding journey fueled by curiosity, a love for cool visuals, and a preference for user-friendly solutions.
+              My journey was fueled by curiosity, a love for cool visuals, and a preference for user-friendly solutions.
               <br /><br />
               I believe the combination of my technical skills and design passion brings innovation to every project. Let's collaborate and bring positive vibes to the digital world!🌐✨
               <br /><br /><br />
               I like classics such as
               <i>
-                <b className="purple"> C++ and Javascript. </b>
+                <b className="purple"> Javascript </b>
+              </i>
+              but also love 
+              <i>
+                <b className="purple"> Figma and Photoshop </b>
               </i>
               <br />
               <br />
               My field of Interest's are building new &nbsp;
               <i>
-                <b className="purple">Games and Design </b> and
+                <b className="purple">Design and Games</b> and
                 also in areas related to{" "}
                 <b className="purple">
                   3D Modeling and Multimedia Content Production

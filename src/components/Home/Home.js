@@ -24,7 +24,7 @@ function Home() {
           <div>UX/UI</div>
           <div>|</div>
           <div>Illustration</div></Col> */}
-            Design | UX/UI | Illustration
+            Design | Software Development | Illustration
           </Row>
           {/* <Row>
             <Col md={7} className="home-header">

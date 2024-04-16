@@ -19,9 +19,6 @@ function ProjectCards(props) {
     // <Container>
     <Link to={`/project/${props.projectId}`} style={{ textDecoration: 'none' }}>
       <Row className="projects-card">
-        <Col md='5'>
-          <img src={props.imgPath} alt="Project" className="projects-card-img" />
-        </Col>
 
         <Col md='5' className="projects-card-col">
           <Row>
@@ -113,6 +110,32 @@ function ProjectCards(props) {
                   {"Article"}
                 </Button>
               )}
+              {/* page Button */}
+              {props.pdfLink && (
+                <Button
+                  variant="primary"
+                  href={props.pdfLink}
+                  target="_blank"
+                  style={{ marginLeft: "10px" }}
+                  onClick={handleButtonClick}
+                >
+                  <MdArticle /> &nbsp;
+                  {"Game Book PDF"}
+                </Button>
+              )}
+              {/* page Button */}
+              {props.pdfLink2 && (
+                <Button
+                  variant="primary"
+                  href={props.pdfLink2}
+                  target="_blank"
+                  style={{ marginLeft: "10px" }}
+                  onClick={handleButtonClick}
+                >
+                  <MdArticle /> &nbsp;
+                  {"Gameplay PDF"}
+                </Button>
+              )}
               {/* figma Button */}
               {props.figLink && (
                 <Button
@@ -131,6 +154,9 @@ function ProjectCards(props) {
 
           
 
+        </Col>
+        <Col md='6'>
+          <img src={props.imgPath} alt="Project" className="projects-card-img" />
         </Col>
       </Row>
     </Link>
